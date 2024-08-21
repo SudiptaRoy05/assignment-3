@@ -1,11 +1,116 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignment-3</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment-3</title>
+
+  <!-- font links -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+  <!-- DaisyUI CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/9ebbcb81ff.js" crossorigin="anonymous"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            primary: '#ABEF5F',
+            secondary: '#494949',
+            info: '#737373',
+            house_white: '#E9E9E9',
+          },
+          fontFamily: {
+            manrope: 'Manrope'
+          },
+          backgroundImage: {
+            banner:`url('./assets/banner.png')`,
+          }
+        }
+      }
+    }
+  </script>
 </head>
-<body>
-    
+
+<body class="font-manrope">
+  <header class="bg-gradient-to-b from-slate-100 to-slate-50">
+    <nav class="lg:w-10/12 md:w-full mx-auto navbar mb-10">
+      <div class="navbar-start space-x-1">
+        <i class="fa-solid fa-arrow-right p-2 -rotate-45 bg-primary rounded-full "></i>
+        <a class="text-2xl font-extrabold" href="#">
+          Rinterio
+        </a>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1 flex items-center gap-5 text-lg font-medium text-info">
+          <li class="hover:text-secondary transition-colors ease-in-out duration-300">
+            <a href="#">Home</a>
+          </li>
+          <li class="hover:text-secondary transition-colors ease-in-out duration-300">
+            <a href="#">Services</a>
+          </li>
+          <li class="hover:text-secondary transition-colors ease-in-out duration-300">
+            <a href="#">Portfolio</a>
+          </li>
+          <li class="hover:text-secondary transition-colors ease-in-out duration-300">
+            <a href="#">Blogs</a>
+          </li>
+          <li class="hover:text-secondary transition-colors ease-in-out duration-300">
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div class="navbar-end items-center">
+        <div class="flex gap-5 items-center text-lg max-sm:hidden">
+          <i class="fa-solid fa-magnifying-glass p-2 rounded-full text-info bg-white "></i>
+          <i class="fa-solid fa-cart-shopping p-2 rounded-full text-info bg-white "></i>
+          <button class=" btn bg-primary lg:text-lg rounded-3xl lg:font-semibold">Book Consult <i class="fa-solid fa-arrow-right p-1 lg:p-2 -rotate-45 bg-black text-white rounded-full "></i></button>
+        </div>
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden text-lg">
+            <i class="fa-solid fa-bars p-3 bg-white rounded-full"></i>
+          </div>
+          <ul tabindex="0"
+            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 right-0 p-2 shadow text-lg font-medium gap-5">
+            <li class="hover:text-secondary transition-colors ease-in-out duration-300">
+              <a href="#">Home</a>
+            </li>
+            <li class="hover:text-secondary transition-colors ease-in-out duration-300">
+              <a href="#">Services</a>
+            </li>
+            <li class="hover:text-secondary transition-colors ease-in-out duration-300">
+              <a href="#">Portfolio</a>
+            </li>
+            <li class="hover:text-secondary transition-colors ease-in-out duration-300">
+              <a href="#">Blogs</a>
+            </li>
+            <li class="hover:text-secondary transition-colors ease-in-out duration-300">
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section class="lg:w-10/12 mx-auto md:w-full">
+      <div class="w-4/5 mx-auto">
+        <div class="bg-banner h-64 lg:w-full bg-no-repeat bg-center">
+        </div>
+      </div>
+      <div class="text-center pt-6">
+        <h1 class="lg:text-5xl text-3xl font-extrabold w-4/5 mx-auto">A barn house of this design has a striking appearance</h1>
+      </div>
+
+    </section>
+  </header>
 </body>
+
 </html>
