@@ -356,7 +356,7 @@
               modern sophistication, featuring weathered wood, sleek metal accents.</p>
           </div>
 
-          <div class="space-y-6 pb-10 font-bold">
+          <div class="space-y-6 pb-10 text-lg font-bold">
             <div class="flex gap-6 max-sm:flex-col ">
               <div class="flex-1">
                 <input type="text" placeholder="First Name*" class="input rounded-full w-full py-8" />
@@ -374,9 +374,14 @@
               </div>
             </div>
             <div class="">
-              <input type="text" placeholder="Write your message here" class="input rounded-3xl w-full h-60 pt-2 pl-4" />
+              <textarea class="textarea  rounded-3xl text-lg w-full h-60 pt-2 pl-4"
+                placeholder="Enter your message"></textarea>
             </div>
-            
+            <div>
+              <button class=" btn bg-primary lg:text-xl rounded-3xl w-full lg:font-bold">Send Mail<i
+                  class="fa-solid fa-arrow-right p-1 lg:p-2 -rotate-45 bg-black text-white rounded-full "></i></button>
+            </div>
+
           </div>
 
         </div>
@@ -384,6 +389,39 @@
     </section>
 
   </main>
+  <footer>
+    <section class="bg-[#1C1C1C] lg:pt-20 pt-10">
+      <div class="w-10/12 mx-auto">
+        <div class="text-center lg:space-y-6 text-white lg:pb-16 pb-8">
+         <div class="flex gap-2 items-center justify-center pb-6">
+          <div>
+            <i class="fa-solid text-black fa-arrow-right p-2 -rotate-45 bg-primary rounded-full "></i>
+          </div>
+          <div>
+            <a class="text-3xl font-extrabold" href="#">
+              Rinterio
+            </a>
+          </div>
+         </div>
+          <p class="text-lg opacity-45 font-semibold">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+        </div>
+        <div>
+          <ul class="text-white text-lg flex max-sm:flex-col gap-6 lg:gap-16 justify-center items-center cursor-pointer">
+            <li>Home</li>
+            <li>Service</li>
+            <li>Portfolio</li>
+            <li>Blogs</li>
+            <li>Contact Us</li>
+          </ul>
+        </div>
+        <div class="text-center py-16">
+          <button class=" btn bg-primary lg:text-lg rounded-3xl border-none lg:font-semibold">Book Consult <i
+            class="fa-solid fa-arrow-right p-1 lg:p-2 -rotate-45 bg-black text-white rounded-full "></i></button>
+        </div>
+
+      </div>
+    </section>
+  </footer>
 </body>
 
 </html>
